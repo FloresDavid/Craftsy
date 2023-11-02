@@ -30,12 +30,32 @@
         <section class="register__main__section">
             <form action="" class="form">
                 <div class="form__box">
-                    <label class="form__label">Nombre</label>
-                    <input class="form__input" type="text" placeholder="Ej: David">
+                    <label class="form__label" for="name">Nombre</label>
+                    <input class="form__input" type="text" required placeholder="Ej: David" id="name" name="name">
                 </div>
                 <div class="form__box">
-                    <label class="form__label">Apellido</label>
-                    <input class="form__input" type="text" placeholder="Ej: Flores">
+                    <label class="form__label" for="surname">Apellido</label>
+                    <input class="form__input" type="text" required placeholder="Ej: Flores" id="surname" name="surname">
+                </div>
+                <div class="form__box">
+                    <label class="form__label" for="email">E-mail</label>
+                    <input class="form__input" type="email" required placeholder="Ej: tuenombre@email.com" id="email" name="email">
+                </div>
+                <div class="form__box">
+                    <label class="form__label" for="tel">Telefono</label>
+                    <input class="form__input" type="tel" required placeholder="Ej: 1123456789" id="tel" name="tel">
+                </div>
+                <div class="form__box">
+                    <label class="form__label" for="password">Contraseña</label>
+                    <input class="form__input" type="password" required  placeholder="" id="password" name="password">
+                </div>
+                <div class="form__box">
+                    <label class="form__label" for="password2">Confirmar contraseña</label>
+                    <input class="form__input" type="password" required  placeholder="" id="password2" name="password2">
+                </div>
+                <div class="box__end">
+                    <button class="button button__secondary" type="reset">Restablecer</button>
+                    <button class="button button__primary" type="submit">Enviar</button> 
                 </div>
             </form>
         </section>
