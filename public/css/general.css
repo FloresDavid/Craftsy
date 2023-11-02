@@ -1,7 +1,8 @@
 :root {
 --colorRojo: #ff4500;
 --colorGris: #6d6c6c;
---colorBlanco: #fff
+--colorBlanco: #fff;
+--colorAzul: #0101ff;
 }
 * {
     margin: 0;
@@ -27,4 +28,17 @@ body{
     width: 100%;
     justify-content: flex-end;
     gap: 10px;
+}
+.box__card {
+    max-width: 400px;
+    width: 90%;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px #c0c0c0;
+    padding: 20px;
+    border-radius: 5px;
+}
+.link {
+    color: var(--colorAzul);
+    text-decoration: underline;
 }

@@ -9,6 +9,15 @@
     margin-bottom: 20px;
     width: 100%;
 }
+.form__box--position {
+    position: relative;
+}
+.form__box--position span{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    cursor: pointer;
+}
 .form__input {
     width: 100%;
     padding: 8px;

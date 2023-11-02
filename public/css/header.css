@@ -10,6 +10,12 @@ header section {
 
 header section a {
     border: 1px solid #ffffff;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 1.5rem;
+}
+
+.header__section__logo {
     padding: 5px;
     border-radius: 4px;
     font-size: 1.5rem;
@@ -39,7 +45,7 @@ header nav ul li a {
         align-items: center;
     }
 
-    header section a {
+    .header__section__menu {
        display: none;
     }
 
