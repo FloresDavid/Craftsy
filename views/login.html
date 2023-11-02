@@ -11,8 +11,8 @@
 <body class="Login">
     <header>
         <section class="header__section">
-            <img src="/img/logo.png" alt="logo">
-            <a href="/" class="fa-solid fa-bars"></a>
+            <a class="header__section__logo" href="/"><img src="/img/logo.png" alt="logo"></a>
+            <a  class="header__section__menu" href="/"><i class="fa-solid fa-bars"></i></a>
         </section>
         <nav>
             <ul>
@@ -27,6 +27,38 @@
         </nav>
     </header>
     <main class="login__main">
+        <section class="box__card">
+            <div class="box__card--title">
+                <h3>Login</h3>
+                <hr>
+            </div>
+            <form action="/profile" class="form">
+                <div class="form__box">
+                <div class="form__box">
+                    <label class="form__label" for="email">E-mail</label>
+                    <input class="form__input" type="email" required placeholder="Ej: tuenombre@email.com" id="email" name="email">
+                </div>
+                <div class="form__box">
+                    <label class="form__label" for="password">Contraseña</label>
+                    <div>
+                        <input class="form__input" type="password" required  placeholder="" id="password" name="password">
+
+                    </div>
+                </div>
+                <div class="form__box">
+                    <p>¿No estas registrado?</p>
+                    <a href="/register" class="link">Registrate</a>
+                </div>
+                <div class="form__box">
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember">Recordame</label>
+                </div>
+                <div class="box__end">
+                    <a href="/" class="button button__secondary">Cancelar</a>
+                    <button class="button button__primary" type="submit">Enviar</button> 
+                </div>
+            </form>
+        </section>
     </main>
 </body>
 

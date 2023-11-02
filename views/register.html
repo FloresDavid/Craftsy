@@ -11,8 +11,8 @@
 <body class="register">
     <header>
         <section class="header__section">
-            <img src="/img/logo.png" alt="logo">
-            <a href="/" class="fa-solid fa-bars"></a>
+            <a class="header__section__logo" href="/"><img src="/img/logo.png" alt="logo"></a>
+            <a  class="header__section__menu" href="/"><i class="fa-solid fa-bars"></i></a>
         </section>
         <nav>
             <ul>
@@ -27,7 +27,11 @@
         </nav>
     </header>
     <main class="register__main">
-        <section class="register__main__section">
+        <section class="box__card">
+            <div class="box__card--title">
+                <h3>Registro</h3>
+                <hr>
+            </div>
             <form action="" class="form">
                 <div class="form__box">
                     <label class="form__label" for="name">Nombre</label>
@@ -52,6 +56,10 @@
                 <div class="form__box">
                     <label class="form__label" for="password2">Confirmar contraseña</label>
                     <input class="form__input" type="password" required  placeholder="" id="password2" name="password2">
+                </div>
+                <div class="form__box">
+                    <p>¿Ya estas registrado?</p>
+                    <a href="/login" class="link">Ingresa</a>
                 </div>
                 <div class="box__end">
                     <button class="button button__secondary" type="reset">Restablecer</button>
