@@ -8,7 +8,7 @@ header section {
     justify-content: space-between;
 }
 
-header section a {
+.header__section__menu{
     border: 1px solid #ffffff;
     padding: 5px 8px;
     border-radius: 4px;
@@ -16,9 +16,7 @@ header section a {
 }
 
 .header__section__logo {
-    padding: 5px;
-    border-radius: 4px;
-    font-size: 1.5rem;
+    border: none;
 }
 
 header nav {
