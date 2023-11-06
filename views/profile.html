@@ -27,27 +27,96 @@
         </nav>
     </header>
     <main class="perfil__main">
-        <section class="box__card">
+        <section class="box__card box__card--double">
             <div class="box__card--title">
                 <h3>Perfil</h3>
                 <hr>
             </div>
             <form action="" class="form">
-                <div class="form__box">
+                <div class="form__box--col50">
                     <label class="form__label" for="name">Nombre</label>
                     <input class="form__input" type="text" value="David" id="name" name="name">
                 </div>
-                <div class="form__box">
+                <div class="form__box--col50">
                     <label class="form__label" for="surname">Apellido</label>
                     <input class="form__input" type="text" value="Flores" id="surname" name="surname">
                 </div>
-                <div class="form__box">
+                <div class="form__box--col50">
                     <label class="form__label" for="email">E-mail</label>
                     <input class="form__input" type="email" readonly value="davidabelflores@gmail.com" id="email" name="email">
                 </div>
-                <div class="form__box">
+                <div class="form__box--col50">
                     <label class="form__label" for="tel">Telefono</label>
                     <input class="form__input" type="tel" readonly value="1123456789" id="tel" name="tel">
+                </div>
+                <div class="form__box--col50">
+                    <label class="form__label" for="address">Domicilio</label>
+                    <input class="form__input" type="text" placeholder="Calle Falsa 123" id="address" name="address">
+                </div>
+                <div class="form__box--col50">
+                    <label class="form__label" for="birthday">Fecha de nacimiento:</label>
+                    <input class="form__input" type="date"  id="birthday" name="birthday">
+                </div>
+                <div class="form__box--col50">
+                    <label class="form__label" for="city">Ciudad</label>
+                    <select class="form__input" name="city" id="city">
+                        <option value="" selected hidden>Seleccione:</option>
+                        <option value="lanus">Lanus</option>
+                        <option value="quilmes">Quilmes</option>
+                        <option value="san miguel">San Miguel</option>
+                        <option value="san nicolas">San Nicolas</option>
+                        <option value="cordoba">Córdoba</option>
+                        <option value="la banda">La Banda</option>
+                    </select>
+                </div>
+                <div class="form__box--col50">
+                    <label class="form__label" for="province">Provincia</label>
+                    <select class="form__input" name="province" id="province">
+                        <option value="" selected hidden>Seleccione:</option>
+                        <option value="buenos aires">Buenos Aires</option>
+                        <option value="cordoba">Cordoba</option>
+                        <option value="formosa">Formosa</option>
+                        <option value="la pampa">La Pampa</option>
+                        <option value="santiago del estero">Santiago del Estero</option>
+                    </select>
+                </div>
+                <div class="form__box--col50">
+                    <h4 class="form__label" for="gender">Género</h4>
+                    <div class="form__box--col50">
+                        <input type="radio" id="m" value="m" name="gender">
+                        <label for="m">Hombre</label>
+                    </div>
+                    <div class="form__box--col50">
+                        <input type="radio" id="w" value="w" name="gender">
+                        <label for="w">Mujer</label>
+                    </div>
+                </div>
+                <div class="form__box--col50 form__box--row">
+                    <h4 class="form__label" for="info">Recibir informacion de:</h4>
+                    <div class="form__box--col50">
+                        <input type="checkbox" id="Smartphone" value="Smartphone" name="info">
+                        <label for="Smartphone">Smartphone</label>
+                    </div>
+                    <div class="form__box--col50">
+                        <input type="checkbox" id="tablet" value="tablet" name="info">
+                        <label for="tablet">Tablet</label>
+                    </div>
+                    <div class="form__box--col50">
+                        <input type="checkbox" id="notebook" value="notebook" name="info">
+                        <label for="notebook">Notebook</label>
+                    </div>
+                    <div class="form__box--col50">
+                        <input type="checkbox" id="smartwatch" value="smartwatch" name="info">
+                        <label for="smartwatch">Smartwatch</label>
+                    </div>
+                </div>
+                <div class="form__box--col50">
+                    <label for="avatar" class="form__label">Imagen de perfil:</label>
+                    <input type="file" class="form__input" accept="image/*" id="avatar">
+                </div>
+                <div class="form__box">
+                    <label class="form__label" for="about">Acerca de mi:</label>
+                    <textarea class="form__textarea" id="about" name="about" rows="5"></textarea>
                 </div>
                 <div class="box__end">
                     <button class="button button__secondary" type="reset">Restablecer</button>

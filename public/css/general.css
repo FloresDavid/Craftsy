@@ -16,6 +16,9 @@ a {
     text-decoration: none;
     color: #ffffff;
 }
+textarea {
+    resize: none;
+}
 body{
     font-family: 'Lato';
     max-width: 1140px;
@@ -37,6 +40,12 @@ body{
     box-shadow: 5px 5px 5px #c0c0c0;
     padding: 20px;
     border-radius: 5px;
+}
+.box__card--simple {
+    max-width: 320px;
+}
+.box__card--double {
+    max-width: 768px;
 }
 .box__card--title {
     margin-bottom: 30px;
