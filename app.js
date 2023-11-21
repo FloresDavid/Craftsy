@@ -1,12 +1,14 @@
 const express = require('express');
 const path = require('path')
 const app = express();
-const PORT = 3031;
+const mainRouters = require('./routes/mainRoutes');
+const authRouters = require('./routes/authRoutes');
+const usersRouters = require('./routes/usersRoutes');
+
+const PORT = 3000;
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/', mainRouters);
+app.use('/auth', authRouters);
+app.use('/users', usersRouters);
 app.listen(PORT, () => console.log(`Servidor corriendo en http://localhost:${PORT}`));
-
-app.get('/',(req,res) => res.sendFile(path.join(__dirname,'views','home.html')));
-app.get('/login',(req,res) => res.sendFile(path.join(__dirname,'views','login.html')));
-app.get('/register',(req,res) => res.sendFile(path.join(__dirname,'views','register.html')));
-app.get('/profile',(req,res) => res.sendFile(path.join(__dirname,'views','profile.html')));
